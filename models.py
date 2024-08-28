@@ -8,6 +8,7 @@ class User(Base):
     name = Column(String(50),unique=True)
     email = Column(String(50))
     password = Column(String(50))
+    role=Column(String(50))
 
 # class Post(Base):
 #     __tablename__ = 'posts'
