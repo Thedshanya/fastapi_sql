@@ -1,5 +1,5 @@
 from sqlalchemy import Boolean, Column, Integer, String
-from database import Base
+from src.config.database import Base
 
 class User(Base):
     __tablename__ = 'users'
@@ -10,7 +10,4 @@ class User(Base):
     password = Column(String(50))
     role=Column(String(50))
 
-# class Post(Base):
-#     __tablename__ = 'posts'
 
-#     id = Column(Integer,primary_key=True,index=True)
